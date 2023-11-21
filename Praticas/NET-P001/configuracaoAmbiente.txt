@@ -1,0 +1,34 @@
+Verificando se o .NET SDK está corretamente instalado:
+No bash, o seguite comando: 'dotnet sdk check' mostra a versão .NET instalada.
+
+--------------------------- 
+Bem-vindo(a) ao .NET 8.0.
+---------------------------   
+Versão do SDK: 8.0.100  
+---------------------------  
+Runtimes do .NET:
+Nome                              Versão      Status
+---------------------------------------------------------
+Microsoft.AspNetCore.App          8.0.0       Atualizado.
+Microsoft.NETCore.App             8.0.0       Atualizado.
+Microsoft.WindowsDesktop.App      8.0.0       Atualizado.
+
+Verificando versões por comando .NET:
+No bash, o seguite comando: 'dotnet --info' mostra a versão .NET instalada e Informações do sistema.
+
+Remover o .NETCore:
+No bash, os seguites comandos desistalam o .NETCore local ou globalmente.
+dotnet tool uninstall -g dotnetsay
+Desinstala a ferramenta global dotnetsay.
+
+dotnet tool uninstall dotnetsay --tool-path c:\global-tools
+Desinstala a ferramenta global dotnetsay de um diretório do Windows específico.
+
+dotnet tool uninstall dotnetsay --tool-path ~/bin
+Desinstala a ferramenta global dotnetsay de um diretório do Linux/macOS específico.
+
+dotnet tool uninstall dotnetsay
+Desinstala a ferramenta global dotnetsay do diretório atual.
+
+Verificar atualização do .NETCore:
+dotnet tool update 
